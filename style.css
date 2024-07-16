@@ -1,28 +1,325 @@
-body{
-    background-color: rgb(172, 173, 106);
-}
-header{
-    background: rgba(0,0,0,0,7);
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
-nav{
-    float: left;
-}
-nav ul{
-    list-style: none;
-    overflow: hidden;
-}
-nav ul li{
-    float: left;
+
+C2 | MAQUETADO  WEB 2
+Martín Joaquín Aguilar Muñoz
+•
+12 mar (Última modificación: 25 mar)
+SABER
+•
+95
+/100
+95 puntos de 100
+Fecha de entrega: 21 mar, 23:59
+Realizar el siguiente maquetado con todo lo visto anteriormente sobre html y css
+Subir imagen de como quedo el resultado y subir su archivo index.html y style.css
+
+actividad.jpeg
+Imagen
+Comentarios de la clase
+Tu trabajo
+Calificado
+
+index.html
+HTML
+
+style.css
+Hoja de estilo
+
+EJERCICIO MAQUETADO WEB 2.pdf
+PDF
+No se pueden entregar trabajos después de la fecha de entrega
+Comentarios privados
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-nav ul li a{
-    display: block;
-    padding: 30px;
-    color: aquamarine;
-    text-decoration: none;
 }
 
+.grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 6fr auto;
+}
+
+.header {
+    grid-column: 1/6;
+    background-color: rgba(240, 237, 237, 0.75);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 50px; 
+    margin-right: 15px; 
+    margin-left: 50px;
+}
+
+.tay {
+    font-weight: bold;
+    font-size: 20px; 
+    color: rgb(33, 81, 62);
+    margin-right: 250px;
+}
+
+.navegacion {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-right: 110px;
+}
+
+.navseccion {
+    margin-left: 20px;
+    font-weight: 500;
+    margin-right: 20px;
+    color: gray;
+    font-weight: bold;
+}
+
+.verde {
+    width: 30%;
+    height: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0;
+}
+
+.login {
+    margin-right: 25px; 
+    justify-content: center;
+    color: white;
+    background-color: rgb(33, 81, 62);
+    border-radius: 20px;
+    padding: 14px 35px;
+}
+
+.signup {
+    border: 2px transparent solid;
+    border-radius: 20px;
+    margin-right: 25px; 
+    padding: 14px 35px;
+    border-color: rgb(33, 81, 62);
+    background-color: rgba(240, 237, 237, 0.75)
+    
+}
+
+.main {
+    grid-area: 2/1/3/6;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.9rem;
+  }
+
+  .medio {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  
+  .medio-texto {
+    width: 600px;
+    height: 600px;
+    font-weight: bold;
+    z-index: 2;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .medio-text p {
+    font-size: 1.5rem;
+    text-align: start;
+  }
+  
+  .medio-text h1 {
+    font-size: 7rem;
+    text-align: start;
+  }
+  
+  .dream {
+    color: rgb(36, 107, 97);
+  }
+  
+  .Taay {
+    color: rgb(95, 160, 110);
+  }
+  
+  .medio-img {
+    width: 700px;
+    height: 700px;
+    margin-bottom: 20px;
+    margin-left: -100px; 
+    margin-top: 60px;
+}
+
+ .medio-img > img {
+    width: 110%;
+    border-radius: 20px;
+}
+.seccion6 {
+    background-color: rgb(232, 229, 229);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cuadroos {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-between;
+
+  }
+  
+  .cuadroos img {
+    width: 290px;
+    height: 180px;
+  }
+  
+  .cuadroos-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-between;
+  }
+  
+  .cuadroverde {
+    margin-bottom: 20px;
+    background-color: rgb(47, 148, 131);
+    width: 290px;
+    height: 50px;
+    text-align: center;
+  }
+  
+  .cuadroblan {
+    background-color: white;
+    width: 290px;
+    height: 100px;
+    margin-top: -20px;
+    text-align: center;
+  }
+  
+  .cuadroblan h1{
+    font-size: 1.3rem;
+  }
+
+  .cuadroblan p{
+    font-size: 1rem;
+    color: gray;
+    font-weight: bold;
+  }
+
+  .cuadroverde h1{
+    font-size: 1rem;
+    color: white;
+  }
+
+  .cuadroaz {
+    background-color: rgb(118, 179, 225);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+    height: 700px; 
+
+}
+
+.cuadroaz img {
+    max-width: 70%; 
+    max-height: 100%; 
+}
+
+.texto {
+    width: 50%; 
+    color: white;
+    text-align: left; 
+}
+
+.texto h1 {
+    font-size: 4rem;
+    color: white;
+    margin: 10px 0;
+}
+
+.texto p {
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+.footer {
+    grid-area: 4/1/7/10;
+    background-color: black;
+    justify-content: center;
+}
+
+.contacto {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    height: 700px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .textooo {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17%;
+  }
+  
+  .textooo p {
+    align-items: center;
+  }
+  
+  .primerapart p {
+    align-items: center;
+    margin-right: 25px; 
+    margin-left: 25px;
+  }
+  
+  .primerapart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+  
+.logofooter {
+    width: 50px;
+    justify-content: space-evenly;
+    padding: 0; 
+    margin-right: 55px; 
+    margin-left: 55px;
+    margin-top: 190px;
+  }
+
+  .logofooter img {
+    width: 80px; 
+    height: auto; 
+}
