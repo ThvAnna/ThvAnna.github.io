@@ -70,7 +70,7 @@ main div {
 
 .parte1 p {
     text-align: start;
-    max-width: 350px; /* Ajusta el tamaño máximo del cuadro de texto */
+    max-width: 450px; /* Ajusta el tamaño máximo del cuadro de texto */
     margin-left: auto;
     font-size: 1.5rem;
     font-weight: bold;
@@ -125,8 +125,9 @@ main div {
 }
 .alignment-container {
     display: flex;
-    align-items: center; /* Alinea verticalmente */
+    align-items: center; 
     gap: 30px;
+    padding-top: 0px; 
    
 }
 
@@ -149,9 +150,21 @@ main div {
 }
 .chart-container {
     width: 100%;
-    max-width: 600px;
-    margin-left: 0;
-    
+    max-width: none; /* Permite que el contenedor use todo el ancho disponible */
+    padding: 0;
+    box-sizing: border-box;
+}
+.chart-container h1 {
+    font-size: 3rem;
+}
+
+.chart-container p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: justify;
+    margin-bottom: 70px;
 }
 .bar {
     height: 5px;
@@ -163,10 +176,10 @@ main div {
     align-items: flex-start;
     font-weight: bold;
 }
-.js { background-color: #f7df1e; width: 90%; }
-.python { background-color: #306998; width: 80%; }
-.java { background-color: #f8991d; width: 70%; }
-.cpp { background-color: #004482; width: 50%; }
+.cpp { background-color: #004482; width: 90%; }
+.java { background-color: #f8991d; width: 85%; }
+.js { background-color: #f7df1e; width: 80%; }
+.python { background-color: #306998; width: 70%; }
 
 .parte4 {
     background-color: #802d67;
@@ -185,8 +198,25 @@ main div {
 }
 
 footer {
-    background-color: #333;
+    background-color: #02060a;
     color: white;
     text-align: center;
     padding: 5em;
+}
+.infoBox a{
+    color: white;
+    text-decoration: none;
+}
+.sci{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci a{
+    color: white;
+    font-size: 2rem;
 }
