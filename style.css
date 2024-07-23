@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -52,6 +53,7 @@ main div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .parte1 h2 {
@@ -78,13 +80,9 @@ main div {
 
 .parte2 {
     background-color: #02060a;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    grid-template-rows: repeat(2, auto); /* Dos filas */
     gap: 10px; /* Espacio entre las celdas */
 }
 .parte2 h2 {
-    grid-column: span 2; /* El título abarca ambas columnas */
     margin-bottom: 20px; /* Añade espacio debajo del título */
     font-size: 5rem;
     text-align: start;
@@ -92,7 +90,7 @@ main div {
     color: #03583c;
 }
 .parte2 p{
-    grid-column: span 2; /* El título abarca ambas columnas */
+
     margin-bottom: 20px; 
     text-align: start;
     font-weight: bold;
@@ -181,9 +179,6 @@ main div {
 .js { background-color: #f7df1e; width: 80%; }
 .python { background-color: #306998; width: 70%; }
 
-.parte4 {
-    background-color: #802d67;
-}
 
 .parte5 {
     background-color: #02060a;
@@ -219,20 +214,11 @@ text-align: justify;
     margin-left: 70px;
 }
 
-
-.parte6 {
-    background-color: #2d6980;
-}
-
-.parte7 {
-    background-color: #804b2d;
-}
-
 footer {
     background-color: #02060a;
     color: white;
     text-align: center;
-    padding: 5em;
+    padding: 2em;
 }
 .infoBox a{
     color: white;
@@ -251,3 +237,71 @@ footer {
     color: white;
     font-size: 2rem;
 }
+
+@media (max-width: 768px) {
+    .parte1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .parte1 h2 {
+        font-size: 3rem;
+    }
+
+    .parte1 p {
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+    
+    .parte2 {
+        grid-template-columns: 1fr; /* Una columna */
+    }
+    
+    .parte2 h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .parte2 p {
+        text-align: center;
+    }
+    
+    .item img {
+        max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    }
+    
+    .alignment-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .alignment-container img {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .technical, .skills {
+        font-size: 2rem;
+    }
+
+    .chart-container h1 {
+        font-size: 2rem;
+    }
+
+    .chart-container p {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imageness img {
+        margin-left: 0;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
